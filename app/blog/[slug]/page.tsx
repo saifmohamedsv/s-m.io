@@ -61,7 +61,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Blog({ params }: { params: any }) {
   const blog = allBlogs.find((blog) => blog.slug === params.slug);
-  console.log(process.env.POSTGRES_URL);
 
   if (!blog) {
     notFound();
@@ -146,6 +145,7 @@ async function Views({ slug }: { slug: string }) {
   return (
     <span>
       <FlipNumber>{viewsForBlog?.count || 0}</FlipNumber>
+      <div>{JSON.stringify(blogViews)}</div>
       {viewsForBlog?.count === 1 ? " view" : " views"}
     </span>
   );

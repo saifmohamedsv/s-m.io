@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://saifmohamedsv.vercel.app/",
     images: [
       {
-        url: "https://saifmohamedsv.vercel.app/api/og?title=B-R.io",
+        url: "https://saifmohamedsv.vercel.app/api/og?title=saifmohamedsv.vercel.app",
         alt: "s-m.io",
       },
     ],

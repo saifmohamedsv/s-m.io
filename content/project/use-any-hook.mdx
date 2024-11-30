@@ -1,0 +1,149 @@
+---
+title: "useAnyHook();"
+date: "2024"
+summary: "A collection of powerful React hooks to simplify state management and API interactions."
+longSummary: "use-any-hook is an npm package offering a variety of lightweight, reusable React hooks. It empowers developers to handle common scenarios like fetching data, toggling state, and more with minimal boilerplate. Built with flexibility and ease of use in mind, it integrates seamlessly into React applications of all sizes."
+url: "https://www.npmjs.com/package/@saif.dev/use-any-hook"
+tags: ["React", "Hooks", "State Management", "npm", "Custom Hooks"]
+---
+
+<Alert>
+  The `use-any-hook` library is open-source and ready to integrate into your
+  projects. Explore the possibilities, and feel free to contribute on
+  [GitHub](https://github.com/saifmohamedsv/use-any-hook).
+</Alert>
+
+### About `use-any-hook`
+
+`use-any-hook` is a library designed to streamline state management and common functionality in React applications. It eliminates repetitive boilerplate, allowing developers to focus on building intuitive, scalable UIs.
+
+<LinkPreview
+  title="use-any-hook"
+  imageUrl="/projects/use-any-hook/cover.png"
+  description="A collection of powerful React hooks to simplify state management and API interactions."
+  link="https://www.npmjs.com/package/@saif.dev/use-any-hook"
+/>
+
+---
+
+### A Fresh Take on React Hooks
+
+React hooks have revolutionized the way we manage state and logic in functional components. However, certain scenarios like fetching data or toggling state often require writing similar boilerplate code repeatedly.
+
+With `use-any-hook`, you get a suite of battle-tested hooks that save you time and effort while keeping your codebase clean and consistent.
+
+<Image
+  src="/projects/use-any-hook/cover.png"
+  alt="use-any-hook overview"
+  width={1458}
+  height={761}
+  contained
+  size="lg"
+/>
+
+---
+
+### Getting Started
+
+To install the library, run the following command:
+
+```bash
+npm i use-any-hook
+```
+
+Start by importing and using one of the hooks in your React project:
+
+```jsx
+import { useFetch } from "use-any-hook";
+function MyComponent() {
+  const [data, loading, error] = useFetch("https://api.example.com/data");
+
+  return (
+    <div>
+      {loading ? "Loading..." : null}
+      {error ? `Error: ${error.message}` : null}
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : null}
+    </div>
+  );
+}
+```
+
+---
+
+### Built-in Hooks
+
+Here are some of the key hooks included in `use-any-hook`:
+
+#### **1. useFetch**
+
+Fetch and handle data with ease.
+
+```jsx
+const [data, loading, error] = useFetch("https://api.example.com/resource");
+```
+
+#### **2. useToggle**
+
+Effortlessly toggle between true and false states.
+
+```jsx
+const [isOn, toggle, setIsOn] = useToggle();
+
+<button onClick={toggle}>Toggle</button>
+<button onClick={() => setIsOn(true)}>Turn ON</button>
+<button onClick={() => setIsOn(false)}>Turn OFF</button>
+```
+
+#### **3. More Hooks**
+
+Want to explore more hooks like `useDebounce`? Check out the full list of hooks and their examples on the official [use-any-hook npm page](https://www.npmjs.com/package/@saif.dev/use-any-hook).
+
+---
+
+### Design Philosophy
+
+The library is built with the following principles:
+
+- **Simplicity**: Hooks are easy to understand and implement.
+- **Flexibility**: Adapts to a variety of use cases in React applications.
+- **Performance**: Lightweight and optimized for production use.
+
+---
+
+### Why `use-any-hook`?
+
+#### 🔥 Save Time
+
+Skip writing boilerplate and repetitive logic.
+
+#### 🔧 Improve Code Quality
+
+Ensure consistent patterns across your codebase.
+
+---
+
+### Future Features
+
+We’re continuously working on improving the library. Some features in the pipeline:
+
+- `useLocalStorage` for easy state persistence.
+- `useDebounce` for input optimizations.
+- Additional hooks for advanced state management.
+
+Have a suggestion? Submit an issue or open a pull request on GitHub!
+
+---
+
+### Closing Thoughts
+
+`use-any-hook` is designed for developers who value simplicity and efficiency in their React workflows. Whether you're working on a small project or a large-scale application, these hooks will save you time and improve your developer experience.
+
+## 👉 Try it today: [npmjs.com/package/use-any-hook](https://www.npmjs.com/package/@saif.dev/use-any-hook)
+
+### Let’s Connect
+
+Follow me for updates and insights:  
+[**My LinkedIn**](https://www.linkedin.com/in/saifmohamedsv/)  
+[**GitHub**](https://github.com/saifmohamedsv/)
+
+---

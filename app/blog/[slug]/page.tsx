@@ -86,7 +86,6 @@ export default async function Blog({ params }: { params: any }) {
                   ? `(Updated ${formatDate(blog.updatedAt)})`
                   : ""}
                 {" · "}
-
                 <Views slug={blog.slug} />
               </p>
             </div>

@@ -145,7 +145,6 @@ async function Views({ slug }: { slug: string }) {
   return (
     <span>
       <FlipNumber>{viewsForBlog?.count || 0}</FlipNumber>
-      <div>{JSON.stringify(blogViews)}</div>
       {viewsForBlog?.count === 1 ? " view" : " views"}
     </span>
   );

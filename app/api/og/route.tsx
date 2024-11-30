@@ -17,24 +17,7 @@ export async function GET(req: NextRequest) {
           justifyContent: "center",
           backgroundImage: "url(https://saifmohamedsv.vercel.app/og-bg.png)",
         }}
-      >
-        <div
-          style={{
-            marginLeft: 205,
-            marginRight: 205,
-            marginBottom: 205,
-            display: "flex",
-            fontSize: 105,
-            letterSpacing: "-0.025em",
-            fontStyle: "normal",
-            color: "white",
-            lineHeight: "110px",
-            whiteSpace: "pre-wrap",
-          }}
-        >
-          {postTitle}
-        </div>
-      </div>
+      ></div>
     ),
     {
       width: 1920,

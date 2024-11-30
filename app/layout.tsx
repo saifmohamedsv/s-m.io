@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Fullstack Frontend Developer | React.js specialist | 🚀 MERN stack | 🙌 Passionate about guiding fresh developers",
   openGraph: {
-    title: "Saif Mohamed",
+    title: "Saif Mohamed | Frontend Engineer",
     url: "https://saifmohamedsv.vercel.app/",
     images: [
       {

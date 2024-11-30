@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ImageResponse } from "next/server";
 import { NextRequest } from "next/server";
 
@@ -7,17 +8,12 @@ export async function GET(req: NextRequest) {
 
   return new ImageResponse(
     (
-      <div
-        style={{
-          height: "100%",
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          backgroundImage: "url(https://saifmohamedsv.vercel.app/og-bg.png)",
-        }}
-      ></div>
+      <img
+        src="https://saifmohamedsv.vercel.app/og-bg.png"
+        alt="Saif Mohamed | Frontend Engineer"
+        width={1920}
+        height={1080}
+      />
     ),
     {
       width: 1920,

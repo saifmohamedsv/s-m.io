@@ -61,6 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Blog({ params }: { params: any }) {
   const blog = allBlogs.find((blog) => blog.slug === params.slug);
+  console.log(process.env.POSTGRES_URL);
 
   if (!blog) {
     notFound();
